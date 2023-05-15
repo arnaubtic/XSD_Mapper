@@ -1,0 +1,32 @@
+﻿<Window x:Class="XSD_Mapper.ConnectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XSD_Mapper"
+        mc:Ignorable="d"
+        Title="ConnectionWindow"
+        Height="260"
+        Width="460">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label Content="Server Name:" Width="120"/>
+                <TextBox Name="ServerName" MinWidth="300"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label Content="Database Name:" Width="120"/>
+                <TextBox Name="DatabaseName" MinWidth="300"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label Content="User Name:" Width="120"/>
+                <TextBox Name="UserName" MinWidth="300"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label Content="Password:" Width="120"/>
+                <PasswordBox Name="Password" MinWidth="300"/>
+            </StackPanel>
+            <Button Content="Ok" Click="Connect_Click" Margin="10" Width="100"/>
+        </StackPanel>
+    </Grid>
+</Window>
